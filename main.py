@@ -17,7 +17,8 @@ async def on_message(message):
   if message.content.startswith('$scene'):
     #substring
     chan = message.channel
-    await chan.create_thread('mythread')
+    scene = await chan.create_thread(name = 'mythread')
+    
 
   #create thread
   
